@@ -1,0 +1,358 @@
+body,html{
+FONT-FAMILY: "宋体",Arial, Helvetica, sans-serif;
+font-size:12px;
+margin:0px;
+padding:0px;
+line-height:20px;
+background-color: #3366FF
+}
+
+
+a:link{
+	text-decoration:none;
+    color:#000000;
+	}
+
+a:active{
+	text-decoration:none;
+    color:#000000;
+	}		
+a:visited{
+	text-decoration:none;
+    color:#000000;
+	}
+a:hover{
+	text-decoration:underline;
+    color:#666;
+	}	
+ul{
+list-style-type:none;
+margin:0px;
+padding:0px;}
+
+.topfont{
+color:#FFFFFF;
+font-size:14px;
+font-weight:bold;
+}
+.topfont a:link{
+	text-decoration:none;
+    color:#ffffff;
+	}
+
+.topfont a:active{
+	text-decoration:none;
+    color:#ffffff;
+	}		
+.topfont a:visited{
+	text-decoration:none;
+    color:#ffffff;
+	}
+.topfont a:hover{
+	text-decoration:underline;
+    color:#ffffff;
+	}
+
+#header{
+width:100%;
+height:268px;
+margin:0 auto;
+}
+#header_index{
+width:100%;
+height:auto;
+margin:0 auto;
+}
+#main{
+width:100%;
+margin:0 auto;
+padding:0px;}
+div{
+padding:0px;
+margin:0px;}
+.divfloat{
+float:left;}
+.left{
+width:228px;
+
+}
+.right{
+width:775px;
+}
+
+
+
+
+
+
+.index_news{
+width:100%;
+float:left;}
+
+.index_news li{
+float:left;
+height:25px;
+line-height:25px;
+border-bottom:1px solid #CCCCCC;}
+
+.index_news_li{
+LINE-HEIGHT: 25px;  DISPLAY: block; BACKGROUND: url("../images/news1.jpg")/*tpa=http://www.dg-pf.com/images/news1.jpg*/ no-repeat left center; HEIGHT: 25px;
+}
+
+
+
+
+.menu{
+margin:0px;
+padding:0px;
+width:100%;
+/*background-image:url(../images/company_04.jpg);*/
+}
+
+
+
+.menu li{
+height:33px;
+font-size:14px;
+line-height:33px;
+margin:auto;
+width:100%;
+text-indent:1em;
+margin-bottom:1px;
+}
+.menu span{
+padding-left:20px;}
+
+.menu A{
+	LINE-HEIGHT: 33px;  DISPLAY: block; BACKGROUND: url("../images/left007.gif")/*tpa=http://www.dg-pf.com/images/left007.gif*/ no-repeat left center; HEIGHT: 33px; CURSOR: pointer;
+}
+.menu a:hover{LINE-HEIGHT: 33px;  DISPLAY: block;  HEIGHT: 33px; CURSOR: pointer; color:#FF0000;}
+
+.menu_2{
+background-image:url("../images/company_04.jpg")/*tpa=http://www.dg-pf.com/images/company_04.jpg*/;
+}
+
+
+.menu_2_1 A{
+
+
+	LINE-HEIGHT: 22px;  DISPLAY: block; BACKGROUND: url("../gb/images/leftbiao.jpg")/*tpa=http://www.dg-pf.com/gb/images/leftbiao.jpg*/ no-repeat left center; HEIGHT: 22px; CURSOR: pointer;
+}
+
+
+.menu_2_1_1 A{
+}
+
+.productsearch{
+width:230px;
+margin:auto;}
+.searchtext{
+float:right;
+padding-top:7px;
+width:230px;
+height:35px;
+line-height:35px;
+margin:auto;}
+.searchtext li{
+margin-left:8px;
+float:left;
+}
+.searchtext img{
+vertical-align:middle;}
+
+
+.reger{
+overflow:hidden;
+width:99%;
+margin:0 auto;}
+.reger li{
+height:21px;
+margin-top:3px;
+line-height:20px;
+width:48%;
+text-align:center;
+float:left;
+}
+
+
+.product_title{
+background-image:url("../images/product.jpg")/*tpa=http://www.dg-pf.com/images/product.jpg*/;
+width:774px;
+height:36px;}
+
+.search_title{
+background-image:url("../images/product.jpg")/*tpa=http://www.dg-pf.com/images/product.jpg*/;
+width:1003px;
+height:36px;
+}
+
+.cpdetail{
+border-bottom:1px #CCCCCC dotted;
+border-top:1px #CCCCCC dotted;
+}
+
+
+.product_title li{
+line-height:36px;
+text-align:right;
+font-size:12px;
+padding-right:50px;}
+
+.news_title{
+background-image:url("../images/news.jpg")/*tpa=http://www.dg-pf.com/images/news.jpg*/;
+width:774px;
+height:36px;}
+
+.news_title li{
+line-height:36px;
+text-align:right;
+font-size:12px;
+padding-right:50px;}
+
+
+.news_detail{
+width:98%;
+margin:auto;
+padding-top:10px;
+}
+
+
+.quick{
+width:84%;
+margin:4px auto;
+}
+#footer{
+width:1003px;
+margin:0 auto;
+height:79px;
+clear:both;
+overflow:hidden;
+}
+.footerlogo{
+width:227px;
+height:76px;}
+
+.copyRight{
+padding-top:10px;
+font-size:12px;
+background-image:url("../images/company_10.jpg")/*tpa=http://www.dg-pf.com/images/company_10.jpg*/;
+width:774px;
+height:76px;
+float:left;
+
+}
+.copyRight li{
+width:90%;
+margin:auto;
+height:18px;
+
+}
+.contact001{
+	background-image: url("../gb/images/contactBg.gif")/*tpa=http://www.dg-pf.com/gb/images/contactBg.gif*/;
+	background-repeat: no-repeat;
+	background-position: right 350px;
+}
+
+#demo {
+overflow:hidden;
+width: 680px;
+margin-left:10px;
+position:relative;
+}
+#indemo {
+float: left;
+width: 720%;
+}
+#demo li {
+float: left;
+padding: 20px;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
+}
+
+#1demo {
+overflow:hidden;
+width: 680px;
+margin-left:10px;
+position:relative;
+}
+#1indemo {
+float: left;
+width: 720%;
+}
+#1demo li {
+float: left;
+padding: 20px;
+}
+#1demo1 {
+float: left;
+}
+#1demo2 {
+float: left;
+}
+
+.de0 a{width:72px;height:36px;line-height:36px;display:block;}
+.de0 a:hover{width:72px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -178px 0 no-repeat;}
+.de1 a{width:93px;height:36px;line-height:36px;display:block;}
+.de1 a:hover{width:93px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -168px 0 no-repeat;}
+.de2 a{width:90px;line-height:36px;display:block;}
+.de2 a:hover{width:90px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -168px 0 no-repeat;}
+.de3 a{width:90px;line-height:36px;display:block;}
+.de3 a:hover{width:90px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -168px 0 no-repeat;}
+.de4 a{width:89px;line-height:36px;display:block;}
+.de4 a:hover{width:89px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -353px 0 no-repeat;}
+.de5 a{width:89px;line-height:36px;display:block;}
+.de5 a:hover{width:89px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -448px 0 no-repeat;}
+.de6 a{width:91px;line-height:36px;display:block;}
+.de6 a:hover{width:91px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -540px 0 no-repeat;}
+.de7 a{width:93px;line-height:36px;display:block;}
+.de7 a:hover{width:93px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -630px 0 no-repeat;}
+.de8 a{width:84px;line-height:36px;display:block;}
+.de8 a:hover{width:84px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -636px 0 no-repeat;}
+/*.de9 a{width:194px;line-height:36px;display:block;}
+.de9 a:hover{width:194px;height:36px;line-height:36px;display:block;background:url(/images/menu_001.gif) -969px 0 no-repeat;}*/
+/*当前栏目焦点效果 在原始css后面加-1*/
+.de0-1 a{width:72px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -178px 0 no-repeat;}
+.de1-1 a{width:93px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -168px 0 no-repeat;}
+.de2-1 a{width:90px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -168px 0 no-repeat;}
+.de3-1 a{width:90px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -168px 0 no-repeat;}
+.de4-1 a{width:89px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -353px 0 no-repeat;}
+.de5-1 a{width:89px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -448px 0 no-repeat;}
+.de6-1 a{width:91px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -540px 0 no-repeat;}
+.de7-1 a{width:93px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -630px 0 no-repeat;}
+.de8-1 a{width:84px;height:36px;line-height:36px;display:block;background:url("../images/menu_001.gif")/*tpa=http://www.dg-pf.com/images/menu_001.gif*/ -636px 0 no-repeat;}
+/*.de9-1 a{width:70px;height:36px;line-height:36px;display:block;background:url(/images/menu_001.gif) -969px 0 no-repeat;}*/
+
+/*QQ在线*/
+.qqbox a:link,.qqbox a:visited{color: #000;text-decoration: none;}
+.qqbox a:hover,.qqbox a:active{color: #f80000;text-decoration: underline;}
+/*主框架*/
+.qqbox{width:170px;overflow:hidden;position:absolute;right:0;top:220px;color:#000000;font-size:12px;letter-spacing:0px;}
+/*主框架*/
+.qqlv{width:25px;overflow:hidden;position:relative;float:right;}
+/*大面板边框色*/
+.qqkf{width:170px;height:214px;overflow:hidden;background-image: url("../Images/siderIM_title.gif")/*tpa=http://www.dg-pf.com/Images/siderIM_title.gif*/;padding:76px 0 0 0;}
+/*小面板背景色*/
+.qqkfbt{width:150px;height:20px;overflow:hidden;background:#C0C4C7;line-height:20px;font-weight:bold;color:#fff;position:relative;cursor:pointer;text-align:center;margin:0 0 10px 10px;}
+/*小面板里的内容*/
+.qqkfhm{width:120px;height:22px;overflow:hidden;line-height:20px;padding-right:8px;position:relative;}
+/*小面板里的内容*/
+.bgdh{width:120px;margin:10px 0 0 30px;overflow:hidden;text-align:center;}
+
+
+.weizi01 {
+	font-size: 14px;
+	line-height: 36px;
+	color: #00AD53;
+	text-align:center;
+}
+.weizi02 {
+	font-size: 14px;
+	line-height: 36px;
+	color: #00AD53;
+	text-align:left;
+}

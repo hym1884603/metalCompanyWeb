@@ -1,0 +1,28 @@
+.onShow,.onFocus,.onError,.onCorrect,.onLoad
+{
+	padding:3px 5px 3px 25px; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	display:inline;
+}
+.onShow
+{
+    background:url("../../../images/onShow.gif")/*tpa=http://www.dg-pf.com/images/onShow.gif*/ no-repeat; 
+}
+.onFocus
+{
+    background:#E9F0FF url("../../../images/onFocus.gif")/*tpa=http://www.dg-pf.com/images/onFocus.gif*/ no-repeat; 
+}
+.onError
+{
+    background:#FFF2E9 url("../../../images/onError.gif")/*tpa=http://www.dg-pf.com/images/onError.gif*/ no-repeat;
+}
+.onCorrect
+{
+    background:#E9FFEB url("../../../images/onCorrect.gif")/*tpa=http://www.dg-pf.com/images/onCorrect.gif*/ no-repeat;
+}
+.onLoad
+{
+    background:#E9FFEB url("../../../images/onLoad.gif")/*tpa=http://www.dg-pf.com/images/onLoad.gif*/ no-repeat 3px 3px;
+} 

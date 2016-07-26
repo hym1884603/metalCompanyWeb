@@ -1,0 +1,57 @@
+.company_title{
+background-image:url("../images/job1.jpg")/*tpa=http://www.dg-pf.com/images/job1.jpg*/;
+width:774px;
+height:36px;}
+
+
+
+.company_title li{
+line-height:36px;
+text-align:right;
+font-size:12px;
+padding-right:50px;}
+
+.spe_job_list{
+width:100%;
+margin:auto;
+
+}
+.spe_job_title{
+width:100%;
+margin:auto;
+height:25px;
+border-bottom:2px solid #CCCCCC;
+}
+.spe_job_title li{
+width:25%;
+float:left;
+border-right:0px;
+height:25px;
+line-height:25px;
+text-align:center;
+font-weight:bold;
+margin:auto;
+}
+
+.spe_job_content{
+width:100%;
+margin:auto;
+height:28px;
+border-bottom:1px solid #CCCCCC;
+}
+.spe_job_content li{
+width:25%;
+float:left;
+border-right:0px;
+height:28px;
+line-height:28px;
+text-align:center;
+margin:auto;
+}
+.spe_job_content li img{
+margin-top:6px;}
+
+.spe_job_detail{
+border-collapse:collapse;}
+.spe_job_detail td{
+border:1px #CCCCCC solid;}

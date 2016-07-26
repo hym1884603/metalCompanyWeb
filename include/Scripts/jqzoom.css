@@ -1,0 +1,15 @@
+.jqzoom {
+	POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; CURSOR: pointer; PADDING-TOP: 0px
+}
+.jqzoom IMG {
+	FLOAT: left
+}
+DIV.zoomdiv {
+	Z-INDEX: 100; BORDER-BOTTOM: #cccccc 1px solid; POSITION: absolute; TEXT-ALIGN: center; BORDER-LEFT: #cccccc 1px solid; WIDTH: 200px; DISPLAY: none; BACKGROUND: #ffffff; HEIGHT: 200px; OVERFLOW: hidden; BORDER-TOP: #cccccc 1px solid; TOP: 0px; BORDER-RIGHT: #cccccc 1px solid; LEFT: 0px
+}
+DIV.jqZoomPup {
+	Z-INDEX: 10; BORDER-BOTTOM: #aaa 1px solid; POSITION: absolute; FILTER: alpha(Opacity=50); BORDER-LEFT: #aaa 1px solid; WIDTH: 50px; BACKGROUND: url("../images/zoom.gif")/*tpa=http://www.dg-pf.com/include/images/zoom.gif*/ #ffffff no-repeat 50% top; HEIGHT: 50px; VISIBILITY: hidden; BORDER-TOP: #aaa 1px solid; TOP: 0px; BORDER-RIGHT: #aaa 1px solid; LEFT: 0px; opacity: 0.5; -moz-opacity: 0.5; -khtml-opacity: 0.5
+}
+.dotline {
+	BACKGROUND-IMAGE: url("../images/icon/dot_line.gif")/*tpa=http://www.dg-pf.com/include/images/icon/dot_line.gif*/; BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: 50% bottom
+}

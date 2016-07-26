@@ -1,0 +1,15 @@
+a{outline: none;}
+div.menuTree{width:210px; padding-bottom:14px; line-height:34px; overflow:hidden;}
+div.menuTree UL{font-size:12px;margin: 0px;display:none;overflow:hidden;}
+div.menuTree UL LI{list-style: none; line-height:34px; margin-top:0px;overflow:hidden; background: url("products_bj.jpg")/*tpa=http://www.dg-pf.com/js/MenuTree/products_bj.jpg*/ left no-repeat; }
+div.menuTree UL LI.parent A{font-size:12px;text-decoration: none;padding: 0px 2px;color: #666; padding-left:25px;}
+div.menuTree UL LI.parent A:hover{font-size:12px;text-decoration:none;color:#fc7603;}
+div.menuTree UL LI.parent ul li{list-style: none; line-height:27px; margin-top:0px;overflow:hidden; background: url("products_bj.jpg")/*tpa=http://www.dg-pf.com/js/MenuTree/products_bj.jpg*/ left no-repeat; }
+div.menuTree UL LI.parent ul li.child{background: url("products_bj1.jpg")/*tpa=http://www.dg-pf.com/js/MenuTree/products_bj1.jpg*/ left top no-repeat;}
+div.menuTree UL LI.parent ul li.child Mb{background: url("products_bj2.jpg")/*tpa=http://www.dg-pf.com/js/MenuTree/products_bj2.jpg*/ left top no-repeat;}
+div.menuTree UL LI.child A{font-size:12px;text-decoration: none; line-height:26px; padding: 0px 2px;color:#666; padding-left:25px;}
+div.menuTree UL LI.child A:hover{font-size:12px;text-decoration:none;color:#fc7603; line-height:26px;}
+
+/* www.codefans.net */
+div.menuTree UL LI.parent{background: url("products_bj.jpg")/*tpa=http://www.dg-pf.com/js/MenuTree/products_bj.jpg*/ left top no-repeat;}
+div.menuTree UL LI.expanded{background: url("products_bj.jpg")/*tpa=http://www.dg-pf.com/js/MenuTree/products_bj.jpg*/ left top no-repeat;}

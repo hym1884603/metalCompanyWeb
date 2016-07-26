@@ -1,0 +1,124 @@
+#navigation{width:1003px;margin:0 auto;background:url("icon-003.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-003.gif*/ repeat-x;height:87px;}
+#navigation .logo{float:left;width:194px;}
+#navigation .navbar{margin-top:33px;width:700px;float:right;}
+#navigation .site{color:#888888;float:right;font-size:12px;font-family:Arial, Helvetica, sans-serif;text-align:left;margin-top:34px;line-height:16px;}
+#navigation .site a.map{color:#888888;display:block;width:80px;text-decoration:none;background:url("icon-004.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-004.gif*/ no-repeat left center;text-indent:15px;}
+#navigation .site a:hover{color:#f00;} 
+#navigation .site a.en{color:#888888;display:block;width:80px;text-decoration:none;background:url("icon-005.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-005.gif*/ no-repeat left center;text-indent:15px;}
+.navbar li{width:85px;height:50px;text-align:center;font-size:12px;}
+.navbar li a{background:url("icon-001.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-001.gif*/ no-repeat;display:block;width:85px;height:50px;line-height:40px;}
+.navbar li a:hover{background:url("icon-002.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-002.gif*/ no-repeat;display:block;width:85px;height:50px;line-height:40px;color:#0066cc;}
+.drop li{line-height:25px;height:25px;overflow:hidden;}
+li{list-style-type:none;}
+/* first level > list */
+ul.ds {z-index:1000;}
+
+/* first level > list items */
+ul.ds li{float:left;position:relative;margin:0;z-index:1001;margin-right:1px;}
+
+/* first level > link style */
+ul.ds li a, ul.ds li a:visited{position:relative;display:block;text-decoration:none;color:#333;}
+
+/* first level > link style > hover */
+ul.ds li a:hover{color:#0066cc;background-color:#fff;}
+
+/* indicators */
+ul.ds li div.indicator{}
+
+ul.ds li div.indicator a{background:url("icon-001.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-001.gif*/ no-repeat;width:85px;height:50px;
+}
+
+/* open state and hover style */
+ul.ds li.open div.indicator a{background:url("icon-001.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-001.gif*/ no-repeat;width:85px;height:50px;}
+ul.ds li.open div.indicator a:hover{background:url("icon-002.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-002.gif*/ no-repeat;width:85px;height:50px;}.
+ul.ds li div.indicator a{background:url("icon-001.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-001.gif*/ no-repeat;width:85px;height:50px;}
+ul.ds li div.indicator a:hover{background:url("icon-002.gif")/*tpa=http://www.dg-pf.com/js/dropmenu/images/icon-002.gif*/ no-repeat;width:85px;height:50px;}
+
+/* second level > list */
+ul.ds li ul {
+	position: absolute;
+	left:0px;
+	visibility: hidden;
+	z-index: 1001;
+}
+
+/* second level > list items (override first level > list items) */
+ul.ds li ul li {
+	float: none;
+	margin: 0;
+	/*display: inline;*/
+}
+
+/* second level > link style */
+ul.ds li ul li a, ul.ds li ul li a:visited {
+	color: #333 !important;
+	line-height:25px;
+	text-align:center;
+	background:#fff;
+}
+ul.ds li ul li a:hover{color:#f00;}
+
+/* individual styling of first list link style */
+ul#dsList-1 li a, ul#dsList-1 li a:visited {
+	line-height:25px;
+	text-align:center;
+	background:#fff;
+}
+ul#dsList-1 li a:hover{color:#f00;}
+
+/* second level > link style > hover */
+ul.ds li ul li a:hover {
+	color: #333 !important;
+	line-height:25px;
+	text-align:center;
+	background:#fff;
+}
+
+/* clickstream */
+ul.ds li.clickstream a {
+	color: #333;
+}
+
+ul.ds li.clickstream div.indicator a {
+}
+
+ul.ds li.open.clickstream div.indicator a, ul.ds li.clickstream div.indicator a:hover {
+}
+
+ul.ds li ul li.clickstream a {
+	color: #333 !important;
+	background-color: #fff !important;
+}
+
+/* list item widths */
+li#dsListItem-1 {
+	width:85px;
+}
+
+li#dsListItem-2 {
+	width:85px;
+}
+
+li#dsListItem-3 {
+	width:85px;
+}
+
+/* list widths */
+ul#dsList-1 {
+	width:85px;
+}
+
+ul#dsList-2 {
+	width:85px;
+}
+
+ul#dsList-3 {
+	width:85px;
+}
+
+div.dsClear { /* to clear the floated list items */
+	clear: both;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}

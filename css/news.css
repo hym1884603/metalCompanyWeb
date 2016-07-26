@@ -1,0 +1,115 @@
+.spe_news_menu{
+margin:0px;
+padding:0px;
+width:100%;
+/*background-image:url(/images/company_04.jpg);*/
+}
+
+.spe_news_menu A{
+	font-size:14px;
+	LINE-HEIGHT: 25px;  DISPLAY: block; BACKGROUND: url("../gb/images/leftbiao.jpg")/*tpa=http://www.dg-pf.com/gb/images/leftbiao.jpg*/ no-repeat left center; HEIGHT: 25px; CURSOR: pointer;
+}
+
+.spe_news_menu li{
+height:25px;
+line-height:28px;
+margin:auto;
+width:70%;
+text-indent:1em;
+border-bottom:1px #CCCCCC dashed;
+}
+.spe_news_menu span{
+padding-left:8px;}
+
+
+.productsearch{
+width:213px;
+margin:auto;}
+
+.spe_newslist{
+width:98%;
+margin:auto;}
+.spe_newslist div{
+text-align:left;}
+.spe_newslist ul{
+padding:0px;
+margin:0px;
+list-style:none;}
+.spe_newslist_title{
+padding-left:20px;
+clear:both;
+width:99%;
+height:25px;
+font-weight:bold;
+
+}
+.spe_newslist_title a{
+color:#FF0000;
+}
+.spe_newslist_title ul{
+list-style:none;}
+.spe_newslist_title li{
+float:left;
+}
+.spe_NewsHead{
+width:95%; border:1px #CCCCCC solid; height:27px; margin:auto; background-image:url("../gb/images/news_list-bg.jpg")/*tpa=http://www.dg-pf.com/gb/images/news_list-bg.jpg*/; background-repeat:repeat-x;
+line-height:27px;
+}
+
+.spe_NewsHead li{
+width:12%;
+text-align:center;
+line-height:25px;
+float:left;}
+
+.spe_NewsHead ul{
+list-style:none;}
+.spe_NewsHead li{
+float:left;}
+
+.spe_news_list{
+margin:auto;
+width:95%;
+height:25px;
+color:#666666;}
+
+.spe_news_list li{
+width:12%;
+text-align:center;
+line-height:25px;
+float:left;}
+
+
+.spe_news_list_a A {
+	LINE-HEIGHT: 25px; PADDING-LEFT: 16px; DISPLAY: block; BACKGROUND: url("../gb/images/list2.gif")/*tpa=http://www.dg-pf.com/gb/images/list2.gif*/ no-repeat left center; HEIGHT: 25px; CURSOR: pointer;
+	
+}
+.spe_news_list_a A:hover {
+	BACKGROUND: url("../gb/images/list1.gif")/*tpa=http://www.dg-pf.com/gb/images/list1.gif*/ no-repeat left center;
+
+}
+.spe_news_list_a A:active {
+	
+	BACKGROUND: url("../gb/images/list1.gif")/*tpa=http://www.dg-pf.com/gb/images/list1.gif*/ no-repeat left center;
+}
+
+.spe_newslist_rightdiv{
+
+}
+.spe_newslist_rightdiv li{
+height:25px;
+}
+
+.spe_news_category{
+width:100%;
+height:auto;
+margin:auto;
+}
+
+.spe_news_category_two{
+width:100%;
+height:auto;
+margin:auto;
+}
+.spe_news_category_two li{
+float:left;}

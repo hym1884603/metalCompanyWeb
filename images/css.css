@@ -1,0 +1,227 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,tbody,tfoot,thead,tr,th { background:transparent; margin:0; padding:0;outline:0}
+
+ul{ list-style-position: outside}
+body {font-family: Arial, Helvetica, sans-serif, "宋体"; font-size: 12px;line-height: 20px;margin: 0px;padding: 0px; color: #666666; background: url("bgg.jpg")/*tpa=http://www.dg-pf.com/images/bgg.jpg*/ left 0 repeat-x;}
+div,td,ul,li,a{ line-height:150%;padding:0px;margin:0px;text-decoration:none;list-style:none;font-size:12px;}
+p{ padding:0px;margin:0px auto;text-decoration:none;}
+h1,h2,h3,h4,h5,h6{ font-size:12px; font-weight:400; margin:0px; padding:0px; line-height:150%; text-decoration:none;}
+img{border:0px solid; font-size:0px}
+input,select,form{ margin:0px; padding:0px; vertical-align:middle; font-size:12px}
+html a{ color:#666666; text-decoration:none}
+html a:link {color: #666666;text-decoration: none;}
+html a:visited {color: #666666;text-decoration: none;}
+html a:hover{color: #ff4d07;text-decoration: underline;}
+html a:active{color: #666666;text-decoration: none;}
+.fr {float:right}
+.fl {float:left}
+.cboth{ clear:both; height:0px; font-size:0px; margin:0px; padding:0px;}
+.ml{ margin-left:14px;}
+.ml2{ margin-left:25px;}
+.mt{ margin-top:10px;}
+
+#high { height:5px; line-height:5px; overflow:hidden;}
+
+/* links */
+#main{width:980px; overflow:hidden;margin:0 auto; background:#fff;}
+#top{width:980px; height:95px;margin:0 auto;overflow:hidden;background: url("bgg.jpg")/*tpa=http://www.dg-pf.com/images/bgg.jpg*/ left 0 repeat-x;}
+.topbg{width:980px; height:1px; line-height:1px; background:url("topbg.jpg")/*tpa=http://www.dg-pf.com/images/topbg.jpg*/;font-size:0px;}
+.logo{width:980px;; height:90px;overflow:hidden;}
+.logo .left{float:left;width:550px; height:90px; line-height:80px; background:url("logo.jpg")/*tpa=http://www.dg-pf.com/images/logo.jpg*/;}
+.logo .tel{ float:right; width:250px; margin-top:5px; display:inline; margin-right:10px}
+.logo .tel .topmenu{ background:url("grwk_03.gif")/*tpa=http://www.dg-pf.com/images/grwk_03.gif*/ no-repeat; height:24px; text-align:right; width:250px; font-size:10px;}
+.logo .tel .topmenu a{ line-height:24px; margin:0 8px; font-size:12px;}
+.logo .tel .toptel{ margin-top:10px; text-align: center; font-size:16px; line-height:35px; color:#000000;}
+
+#headpage{ width:980px; height:80px; padding-top:15px; background:url("topbg001.gif")/*tpa=http://www.dg-pf.com/images/topbg001.gif*/ no-repeat left top;}
+#headpage h1,#headpage span.jr_logo{ float:left; width:131px; height:62px;}
+#headpage h1 a,#headpage h1 a:hover,#headpage span.jr_logo a,#headpage span.jr_logo a:hover{float:left; width:131px; height:53px; background:url("logo_03.jpg")/*tpa=http://www.dg-pf.com/images/logo_03.jpg*/ no-repeat left top; text-indent:-9999px; overflow:hidden;}
+#headpage span.jr_logo,#headpage span.jr_logo a,#headpage span.jr_logo a:hover{background:none}
+#headpage h2{ float:left; margin-left:50px; width:200px; height:80px;}
+#headerRight{ width:470px; float:right; }
+#headerRight .login{ width:470px; margin-bottom:10px; text-align:right; color:#999999; height:24px;}
+#headerRight .login a{ color:#999999;}
+#headerRight .login a:hover{ color:#005197; text-decoration:underline;}
+.headerOnline{ width:244px; height:19px; float:left; font-size:0px;}
+
+.hotLine{ width:188px; height:19px; margin-left:17px; float:left; display:inline; padding-left:19px; color:#ff0000; line-height:19px; font-family:Arial, Helvetica, sans-serif, "黑体"; font-size:14px;}
+.hotLine strong{ font-weight:bold; font-size:16px;}
+.English{ float:right; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:19px;}
+
+.English{ width:49px; float:left; margin-left:17px; display:inline; font-size:11px;}
+.English a,.English a:hover{ font-family:Arial, Helvetica, sans-serif; font-size:11px;}
+.headerSearch{ width:126px; float:left;}
+.headerSearchL{ width:8px; height:22px; background:url("search_06.gif")/*tpa=http://www.dg-pf.com/images/search_06.gif*/ no-repeat left top; float:left;}
+.headerInput{ width:100px; height:22px; background:url("search_07.gif")/*tpa=http://www.dg-pf.com/images/search_07.gif*/ repeat-x left top; float:left; line-height:21px; border:0px;}
+.headerSearchR{ width:18px; height:22px; float:left;}
+
+/*--- 导航 ---*/
+#nav1 { width:970px; height:40px; line-height:40px; background:url("m_03.jpg")/*tpa=http://www.dg-pf.com/images/m_03.jpg*/ no-repeat; margin:auto; padding:0 5px;}
+#nav { width:970px; height:40px; line-height:40px; margin:0 auto; font-family:"Microsoft Yahei";}
+.nav_l { display:none; }
+.nav_r { display:none; }
+.navigation { padding-left:0px; }
+.navigation li { float:left; width:118px; text-align:center; position:relative; z-index:118; padding-right:0px;}
+.navigation li.bg{ float:left; width:2px;} 
+.navigation li a, .navigation li a:visited { display: block; text-decoration: none; color: #fff; line-height:40px; font-size:14px;}
+.navigation li a:hover, .navigation li.hover a { color: #ffffff; text-decoration: none; background:url("mb_03.jpg")/*tpa=http://www.dg-pf.com/images/mb_03.jpg*/ center top no-repeat; width:118px; height:40px; line-height:40px; font-size:14px;}
+.navigation li.hover a:visited { _color:#fff; }
+.navigation ul { display:none;}
+.navigation ul li { background-image:none; background-color:#890a0b; line-height:40px; margin:0px; padding: 0px; height:40px; width:180px; font-size:12px;}
+.navigation ul li a, .navigation ul li a:hover { background-image:none; color:#fff; width:118px; margin:0px; padding: 0px; height:36px;}
+.navigation li ul { width:118px; display:none; position:absolute; top:40px; left:0px; margin: 0px; padding:0; z-index:118; background-color:#890a0b; }
+.navigation li ul ul { left:118px; top:40px; z-index:236; top:0; width:118px; line-height:27px;}
+.navigation li ul li { background-color:#0157A6; border:0; background-image:none; height:27px; line-height:27px; width:118px; font-size:12px}
+.navigation li ul li a { color:#fff; font-weight:normal; text-align:left; text-indent:10px; background-image:none; height:27px; line-height:27px; width:118px; }
+.navigation li ul li a:visited { _color:#ffffff; background-image:none; font-weight:normal; color:#ffffff; height:27px;  width:118px;}
+.navigation li ul li a:hover { color:#fff; background-image:none; background:#003966; height:27px;  width:118px;}
+.navigation li ul li.hover { background:#003966; background-image:none; width:118px; height:27px;color:#fff;  width:118px;}
+.navigation li.hover ul a { background-image:none; height:27px; line-height:27px;  width:120px;}
+
+.menuuBG{ width:980px; margin:auto; height:40px;}
+.menuu{ width:970px; margin:auto; height:40px; line-height:40px; padding:0 5px; background:url("m_03.jpg")/*tpa=http://www.dg-pf.com/images/m_03.jpg*/;}
+.menuu li{ float:left; position:relative; height:40px; line-height:40px; z-index:9999}
+.menuu li img{ float:left; font-size:0px; display:block; margin-top:0px; height:40px; line-height:40px; vertical-align:middle;} 
+.menuu li a{ font-size:14px; font-family:"Microsoft Yahei"; color:#fff; height:40px; line-height:40px; display:block; width:110px; text-align:center; font-weight:normal;}
+.menuu li a:link,.menuu li a:visited{ color:#fff}
+.menuu li a:hover{ background:url("mb_03.jpg")/*tpa=http://www.dg-pf.com/images/mb_03.jpg*/ no-repeat; color:#fff; text-decoration:none;font-weight: normal;}
+
+.menuu li div{ position:absolute; top:-9999px; left:-9999px; display:none; width:119px; background:#CB2229; z-index:9999;}
+.menuu li div h1{ height:23px; line-height:23px; border-bottom:1px solid #D72A31}
+.menuu li div h1 a{ line-height:25px; font-family:"Microsoft Yahei"; font-size:12px; font-weight: normal; display:block; height:25px;}
+.menuu li div h1 a:hover{ background:#003966; font-weight: normal;}
+.menuu li:hover div{ position:absolute; top:45px; left:0px; display: block; width:119px; background:#CB2229; z-index:9999;}
+
+.menuu .menuxzh{ background: url("mb_03.jpg")/*tpa=http://www.dg-pf.com/images/mb_03.jpg*/ no-repeat top center; text-decoration:none}
+
+.bannertop { width:980px; height:0px;overflow:hidden; margin:0 auto; background: url("bannerbg01.gif")/*tpa=http://www.dg-pf.com/images/bannerbg01.gif*/; font-size:0px;}
+.banner {width:980px; height:280px; line-height:280px; overflow:hidden; margin:0 auto;}
+.banner1 {width:980px; height:130px;overflow:hidden;}
+.bannerbg {float:left;width:980px; height:34px; line-height:34px; overflow:hidden; background: url("bannerbg02.gif")/*tpa=http://www.dg-pf.com/images/bannerbg02.gif*/ no-repeat top center;}
+.bannerbg .aa{float:left; height:34px; line-height:34px; width:80px;}
+.bannerbg .bb{float:left; height:34px; line-height:34px; width:800px;}
+.bannerbg .cc{float:left; height:34px; line-height:34px; width:100px; text-align:center;}
+.bannerbg1 {width:980px; height:8px;overflow:hidden; margin-top:2px;}
+
+.amain{width:980px; overflow:hidden;margin:0 auto;}
+.amain .homeleft{float:left;width:210px; height:auto; overflow:hidden;}
+.amain .homeleft .hy{width:210px; height:30px; line-height:30px;  font-size:14px; overflow:hidden; background: url("left008.gif")/*tpa=http://www.dg-pf.com/images/left008.gif*/; text-align:left; text-indent:30px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; font-weight:bold; color:#ffffff;}
+.amain .homeleft .hy1{float:left;width:210px; height:10px; background: url("left006.gif")/*tpa=http://www.dg-pf.com/images/left006.gif*/ no-repeat top center;}
+.amain .homeleft .hydl{ width:208px;height: auto; background:#F8F8F8; border:1px solid #DEDEDE;}
+.amain .homeleft .hydl ul li{ float:left; width:210px;}
+.amain .homeleft .hydlend{width:210px; height:7px; overflow:hidden;}
+.amain .homeleft .hylogo{width:210px; height:57px; margin-top:10px; overflow:hidden;}
+.amain .homeleft .leftcc{float:left;width:210px; height:10px;}
+.amain .homeleft .leftdd{width:210px; height:30px; line-height:30px;  font-size:14px; overflow:hidden; background: url("left008.gif")/*tpa=http://www.dg-pf.com/images/left008.gif*/; text-align:left; text-indent:30px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; font-weight:bold; color:#ffffff;}
+.amain .homeleft .leftdd1{float:left;width:210px; height:30px; background: url("left023.gif")/*tpa=http://www.dg-pf.com/images/left023.gif*/;}
+.amain .homeleft .leftee{float:left;width:210px; background-color:#F3F3F3;}
+.amain .homeleft .leftee ul li{float:left;width:190px; padding:10px; line-height:25px;}
+.amain .homeleft .leftee1{float:left;width:210px; background-color:#F3F3F3;}
+.amain .homeleft .leftee1 ul{float:left;width:190px; padding:10px; line-height:25px;}
+.amain .homeleft .leftee1 ul li{float:left; line-height:25px;}
+.amain .homeleft .leftff{float:left;width:210px; height:5px;}
+.amain .homeleft .leftgg{float:left;width:210px; height:100px; margin-top:10px;}
+.amain .homeright{float:right;width:760px; height:auto; overflow:hidden;}
+.amain .homeright .homenews{ float:left; width:473px;}
+.amain .homeright .homenews dl{ overflow:hidden;width:100%;}
+.amain .homeright .homenews dl dt{width:473px; height:30px; line-height:30px; overflow:hidden; background: url("khright001.gif")/*tpa=http://www.dg-pf.com/images/khright001.gif*/; text-align:left; font-size:14px; text-indent:30px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; color:#3980D0;}
+.amain .homeright .homenews dl dt span a{float:right; width:90px; height:30px; line-height:30px; text-align:center;color:#ffffff; font-weight: normal;}
+.amain .homeright .homenews dl dd{ padding:10px; background: url("khright002.gif")/*tpa=http://www.dg-pf.com/images/khright002.gif*/; line-height:22px;}
+.amain .homeright .homenews .bottem{ overflow:hidden; height:7px; background: url("khright003.gif")/*tpa=http://www.dg-pf.com/images/khright003.gif*/;}
+.amain .homeright .homecompany{ float:right; width:274px;}
+.amain .homeright .homecompany dl{ overflow:hidden;width:100%;}
+.amain .homeright .homecompany dl dt{width:274px; height:30px; line-height:30px; overflow:hidden; background: url("khright004-1.gif")/*tpa=http://www.dg-pf.com/images/khright004-1.gif*/; text-align:left; font-size:14px; text-indent:20px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; color:#3980D0;}
+.amain .homeright .homecompany dl dt span a{float:right; width:90px; height:30px; line-height:30px; text-align:center;color:#ffffff; font-weight: normal;}
+.amain .homeright .homecompany dl dd{ padding:10px; background: url("khright005.gif")/*tpa=http://www.dg-pf.com/images/khright005.gif*/;}
+.amain .homeright .homecompany .bottem{ overflow:hidden; height:7px; background: url("khright006.gif")/*tpa=http://www.dg-pf.com/images/khright006.gif*/;}
+
+.amain .homeright .lyleft { float:left; width:373px; border:1px solid #dcdfe5;}
+.amain .homeright .lyleft .homenews{ width:373px; overflow:hidden;}
+.amain .homeright .lyleft  .homenews dl{ overflow:hidden;width:100%;}
+.amain .homeright .lyleft  .homenews dl dt{width:373px; height:39px; line-height:39px; overflow:hidden; background: url("left009.gif")/*tpa=http://www.dg-pf.com/images/left009.gif*/; text-align:left; font-size:14px; text-indent:20px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; color:#666;}
+.amain .homeright .lyleft  .homenews dl dt span a{float:right; width:90px; height:39px; line-height:39px; text-align:center;color:#666;}
+.amain .homeright .lyleft  .homenews dl dd{ padding:10px; line-height:22px; background: url("khright002.gif")/*tpa=http://www.dg-pf.com/images/khright002.gif*/;}
+.amain .homeright .lyleft  .homenews .bottem{ overflow:hidden; height:7px; background: url("khright003.gif")/*tpa=http://www.dg-pf.com/images/khright003.gif*/;}
+
+
+.amain .homeright .lyright  .homecompany{ float:right; width:373px; border:1px solid #dcdfe5;}
+.amain .homeright .lyright  .homecompany dl{ overflow:hidden;width:100%;}
+.amain .homeright .lyright  .homecompany dl dt{width:373px; height:39px; line-height:39px; overflow:hidden; background: url("left009.gif")/*tpa=http://www.dg-pf.com/images/left009.gif*/; text-align:left; font-size:14px; text-indent:30px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; color:#666;}
+.amain .homeright .lyright  .homecompany dl dt span a{float:right; width:90px; height:39px; line-height:39px; text-align:center;color:#666;}
+.amain .homeright .lyright  .homecompany dl dd{ padding:10px; line-height:22px; background: url("khright002.gif")/*tpa=http://www.dg-pf.com/images/khright002.gif*/;}
+.amain .homeright .lyright  .homecompany .bottem{ overflow:hidden; height:7px; background: url("khright003.gif")/*tpa=http://www.dg-pf.com/images/khright003.gif*/;}
+
+.amain .homeright .homeproducts{ float:right; width:758px; border:1px solid #dcdfe5; margin-bottom:10px;}
+.amain .homeright .homeproducts dl{ overflow:hidden;width:100%;}
+.amain .homeright .homeproducts dl dt{width:758px; height:34px; line-height:34px; overflow:hidden;background: url("left009.gif")/*tpa=http://www.dg-pf.com/images/left009.gif*/; text-align:left; font-size:14px; text-indent:20px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; color:#666;}
+.amain .homeright .homeproducts dl dt span a{float:right; width:90px; height:40px; line-height:40px; text-align:center;color:#fff; font-weight: normal;}
+.amain .homeright .homeproducts dl dd{ padding:5px; background: url("khright008.gif")/*tpa=http://www.dg-pf.com/images/khright008.gif*/; overflow:hidden; line-height:25px;}
+
+.amain .homeright .homeyllw{ float:right; width:758px; border:1px solid #dcdfe5; margin-top:10px;margin-bottom:10px;}
+.amain .homeright .homeyllw dl{ overflow:hidden;width:100%;}
+.amain .homeright .homeyllw dl dt{width:758px; height:34px; line-height:34px; overflow:hidden; background: url("left009.gif")/*tpa=http://www.dg-pf.com/images/left009.gif*/; text-align:left; font-size:14px; text-indent:20px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; color:#666;}
+.amain .homeright .homeyllw dl dt span a{float:right; width:90px; height:40px; line-height:40px; text-align:center;color:#fff; font-weight: normal;}
+.amain .homeright .homeyllw dl dd{ padding:5px; background: url("khright008.gif")/*tpa=http://www.dg-pf.com/images/khright008.gif*/; overflow:hidden;}
+
+.amain{width:980px; overflow:hidden;margin:0 auto;}
+.amain .left{float:left;width:210px; overflow:hidden;}
+.amain .left .leftbanner{float:left;width:235px; height:180px;border:1px solid #dcdfe5;margin-bottom:10px;}
+.amain .left .leftbanner .bannerly{float:left;width:215px; height:160px; padding:10px;}
+.amain .left .leftbanner1{float:left;width:235px; height:160px;border:1px solid #dcdfe5;}
+.amain .left .leftbanner1 .ltcontact{float:left;width:40px; height:158px; line-height:158px; text-align:center;margin-top:7px;}
+.amain .left .leftbanner1 .rgcontact{float:right;width:190px;margin-top:7px; overflow:hidden;}
+.amain .left .leftbanner1 .rgcontact ul li{float:left;width:98%; line-height:22px;}
+.amain .left .leftcd{width:210px; height:30px; line-height:30px;  font-size:14px; overflow:hidden; background: url("left008.gif")/*tpa=http://www.dg-pf.com/images/left008.gif*/; text-align:left; text-indent:30px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; font-weight:bold; color:#ffffff;}
+.amain .left .leftcd1{width:210px; height:30px; line-height:30px;  font-size:14px; overflow:hidden; background: url("left008.gif")/*tpa=http://www.dg-pf.com/images/left008.gif*/; text-align:left; text-indent:30px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; font-weight:bold; color:#ffffff;}
+.amain .left .leftaa{float:left;width:210px; height:10px; background: url("left006.gif")/*tpa=http://www.dg-pf.com/images/left006.gif*/ no-repeat top center;}
+.amain .left .leftbb{float:left;width:210px; overflow:hidden;}
+.amain .left .leftbb1{float:left;width:210px; overflow:hidden;}
+.amain .left .leftcc{float:left;width:210px; height:10px;}
+.amain .left .leftdd{width:210px; height:30px; line-height:30px;  font-size:14px; overflow:hidden; background: url("left008.gif")/*tpa=http://www.dg-pf.com/images/left008.gif*/; text-align:left; text-indent:30px; font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; font-weight:bold; color:#ffffff;}
+.amain .left .leftee{float:left;width:210px; background-color:#F3F3F3;}
+.amain .left .leftee ul li{float:left;width:190px; padding:10px; line-height:25px;}
+.amain .left .leftff{float:left;width:210px; height:10px; background-color:#F3F3F3;}
+.amain .right{float:right;width:760px; overflow:hidden;margin-bottom:10px; background:#fff;}
+.amain .right .company{float:left;width:425px; height:264px; overflow:hidden; border:1px solid #dcdfe5;}
+.amain .right .company .tcompany{width:425px; height:34px; line-height:34px; background: url("tcompany.gif")/*tpa=http://www.dg-pf.com/images/tcompany.gif*/;}
+.amain .right .company .companyly{width:415px; height:230px; line-height:25px; padding:5px;}
+.amain .right .news{float:right;width:290px; height:264px; overflow:hidden; border:1px solid #dcdfe5;}
+.amain .right .news .tnews{width:290px; height:34px; line-height:34px; background: url("tnews.gif")/*tpa=http://www.dg-pf.com/images/tnews.gif*/;}
+.amain .right .news .newsly{width:280px; height:230px; line-height:25px; padding:5px;}
+.amain .right .ly{float:left;width:758px; overflow:hidden; border:1px solid #dcdfe5;margin-bottom:10px;}
+.amain .right .ly .rightaa{float:left;width:758px; height:34px; line-height:34px; background: url("left009.gif")/*tpa=http://www.dg-pf.com/images/left009.gif*/; font-size:14px; font-family:"Microsoft Yahei", "宋体"; color:#333; text-indent:20px;}
+.amain .right .ly .rightbb{float:right;width:738px; height:34px; line-height:34px; text-align:right; padding-right:25px;}
+.amain .right .ly .rightcc{float:left;width:738px; line-height:25px; padding:10px;}
+
+.bmain{width:978px; height:220px; overflow:hidden;margin:0 auto;border:1px solid #dcdfe5;margin-top:10px;}
+.bmain .tproducts{width:978px; height:34px; line-height:34px; background: url("tproducts.gif")/*tpa=http://www.dg-pf.com/images/tproducts.gif*/;}
+.bmain .productsly{width:970px; height:186px; line-height:34px; padding:5px;}
+
+
+.bottom_header{width:980px;overflow:hidden;margin:0 auto;margin-top:8px;background:#fff;}
+.bottombg{width:980px; height:28px; line-height:28px; background:url("bottombg.gif")/*tpa=http://www.dg-pf.com/images/bottombg.gif*/ left top repeat-x;}
+.link{width:960px;overflow:hidden; margin:0 auto;padding:10px;padding-top:5px;padding-left:10px;background:url("of-ct-oz-002.gif")/*tpa=http://www.dg-pf.com/images/of-ct-oz-002.gif*/; text-align:center;}
+.link li{ float:left;width:95px; height:16px; line-height:16px; margin:7px auto; text-align:center; overflow:hidden;border-right:1px solid #333; }
+.link li a{padding:0px;}
+.bottomend{width:980px; height:3px; line-height:3px; background:url("bottombg1.gif")/*tpa=http://www.dg-pf.com/images/bottombg1.gif*/;}
+
+.end{width:980px; height:94px; line-height:20px;overflow:hidden;margin:0 auto; background: url("end.gif")/*tpa=http://www.dg-pf.com/images/end.gif*/; text-align:center;margin-top:8px;} 
+
+#scroll {margin:0;list-style:none;width:210px;height:100px;overflow:hidden; }
+#scroll li {font-size:12px;height:50px;line-height:50px;}
+
+#scroll {margin:0;list-style:none;width:210px;height:100px;overflow:hidden}
+#scroll li {font-size:12px;height:50px;line-height:50px;}
+
+
+.sl_xin{ width:980px; height:80px; background:url("sl_xin.jpg")/*tpa=http://www.dg-pf.com/images/sl_xin.jpg*/ no-repeat; margin-top:10px;}
+
+.sl_xin ul{ margin:0; padding:0;}
+
+.sl_xin li {font: 300 12px '微软雅黑，宋体'; height:18px; line-height:24px; color:#f00; margin-left:15px; margin-top:15px;text-align:left; float:left}
+
+.endlink{ width:980px; height:36px; background:url("link.jpg")/*tpa=http://www.dg-pf.com/images/link.jpg*/ no-repeat; overflow:hidden;margin:0 auto;}
+
+.endlink li {float:left;font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei"; height:36px; line-height:36px; font-size:14px; text-align:left; text-indent:20px;}
+
+.endlink_bg { width:980px;height:44px; background:#ffff; font:300 12px/18px "宋体"; color:#333;  background:url("link_bg.jpg")/*tpa=http://www.dg-pf.com/images/link_bg.jpg*/ no-repeat; margin:0 auto;}
+

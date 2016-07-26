@@ -1,0 +1,27 @@
+
+.spe_guestbook{
+border:1px #CCCCCC solid;
+padding-top:12px;}
+
+.spe_guestbook_title{
+background-color:#CCCCCC;
+height:28px;
+line-height:28px;
+padding:0 3%;}
+
+.spe_guestbook_content{
+margin:6px 0px;
+color:#666666;}
+.webnum{
+font-family:Georgia, "Times New Roman", Times, serif;}
+.replycontent{
+color:#333333;
+font-size:12px;}
+.spe_guestbook_add{
+border-collapse:collapse;
+}
+.spe_guestbook_add td{
+border:1px solid #CCCCCC;
+height:35px;
+padding-left:10px;
+line-height:36px;}

@@ -1,0 +1,18 @@
+#switch img{border:0;}
+#switch ul{list-style-type:none;}
+#switch{margin:0px auto; position:relative; width:980px; height:280px; line-height:280px; background:#ECEEED; overflow:hidden}
+#switch_button{position:absolute; top:260px; right:4px; z-index:12; width:330px; height:17px;}
+#switch_button dl{float:left; margin:0px; margin-right:6px;}
+#switch_button dl dt{overflow:hidden; display:none; float:left; padding-left:8px; height:17px; line-height:17px; width:0; background:#F5F4F2;}
+#switch_button dl dt a{color:#CA4B04; text-decoration:none;}
+#switch_button dl dt a:hover{color:#900; text-decoration:underline;}
+#switch_button dl dt,#switch_button dl dd{float:left; margin-left:6px;}
+#switch_button dl dd{display:inline; overflow:hidden; height:13px; width:13px; line-height:14px; color:#f00; font-family:"ËÎÌו"; text-align:center; cursor:pointer; border:solid 2px #FFFDFE; background:#D5D7D4;}
+#switch_button dl dd.current{font-weight:700; color:#F8F4F1; background:#f00;}
+.l_button,.r_button{overflow:hidden; float:left; margin-top:3px; width:6px; height:11px; cursor:pointer;}
+.l_button{background:url("images/switch_button_bg.gif")/*tpa=http://www.dg-pf.com/js/dangdang/images/switch_button_bg.gif*/ no-repeat left top;}
+.r_button{background:url("images/switch_button_bg.gif")/*tpa=http://www.dg-pf.com/js/dangdang/images/switch_button_bg.gif*/ no-repeat left -11px;}
+.swith_bg{position:absolute; z-index:11; height:26px; width:980px; top:159px; left:0; background:#000;}
+#switch_img{position:relative; overflow:hidden; width:980px; height:280px;}
+#switch_img img{width:980px; height:280px;}
+#switch_img ul li{position:absolute; overflow:hidden; z-index:0; left:980px; width:980px; height:280px; line-height:280px; background:#fff;}

@@ -1,0 +1,368 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>招聘中心</title>
+<meta name="keywords" content="招聘中心" />
+<meta name="description" content="招聘中心" />
+<meta name="copyright" content="东莞市品凯电子器材有限公司 版权所有. spe.128.com.cn All Rights Reserved." />
+<link href="../css/main.css" tppabs="http://www.dg-pf.com/css/main.css" type="text/css" rel="stylesheet" media="all">
+<link href="../css/spe_job.css" tppabs="http://www.dg-pf.com/css/spe_job.css" type="text/css" rel="stylesheet" media="all">
+<link type="text/css" rel="stylesheet" href="../include/Scripts/validation/validator.css" tppabs="http://www.dg-pf.com/include/Scripts/validation/validator.css"></link>
+<link href="../js/dropmenu/images/jquery.dropSlideMenu.css" tppabs="http://www.dg-pf.com/js/dropmenu/images/jquery.dropSlideMenu.css" rel="stylesheet" type="text/css" />
+<LINK href="../images/css.css" tppabs="http://www.dg-pf.com/images/css.css" type=text/css rel=stylesheet>
+<SCRIPT type="text/javascript" src="../js/jquery-1.4.2.min.js" tppabs="http://www.dg-pf.com/js/jquery-1.4.2.min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="../js/jquery-ui.min.js" tppabs="http://www.dg-pf.com/js/jquery-ui.min.js"></SCRIPT>
+<script Language="JavaScript" src="../js/script.js" tppabs="http://www.dg-pf.com/js/script.js"></script>
+<script src="../include/Scripts/validation/formValidator.js" tppabs="http://www.dg-pf.com/include/Scripts/validation/formValidator.js" type="text/javascript" charset="UTF-8"></script>
+<script src="../include/Scripts/validation/formValidatorRegex.js" tppabs="http://www.dg-pf.com/include/Scripts/validation/formValidatorRegex.js" type="text/javascript" charset="UTF-8"></script>
+<script language="javascript" src="../include/Scripts/validation/DateTimeMask.js" tppabs="http://www.dg-pf.com/include/Scripts/validation/DateTimeMask.js" type="text/javascript"></script>
+<script defer="defer" src="../include/Scripts/validation/datepicker/WdatePicker.js" tppabs="http://www.dg-pf.com/include/Scripts/validation/datepicker/WdatePicker.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//$.formValidator.initConfig({onerror:function(){alert("校验没有通过，具体错误请看错误提示")}});
+	$.formValidator.initConfig({formid:"forma",onerror:function(msg){alert(msg)},onsuccess:function(){alert('修改信息正在提交，请稍后！');return true;}});
+	$("#name").formValidator({onshow:"请填写你的真实姓名",onfocus:"真实姓名长度要求3-16位字符",oncorrect:"真实姓名输入正确"}).inputValidator({min:3,max:16,onerror: "您还没有填写真实姓名!"});
+	$(":radio[name='sex']").formValidator({tipid:"sexTip",onshow:"请选择你的性别",onfocus:"没有第三种性别了，你选一个吧",oncorrect:"输入正确"}).inputValidator({min:1,max:1,onerror:"性别忘记选了,请确认"});//.defaultPassed();
+	$("#nativePlace").formValidator({tipid:"nativePlaceTip",onshow:"请选择你的籍贯",onfocus:"籍贯必须选择",oncorrect:"谢谢你的配合",defaultvalue:""}).inputValidator({min:1,onerror: "您还没有选择籍贯!"});
+	$("#school").formValidator({onshow:"请填写你的毕业院校",onfocus:"毕业院校长度要求4-20位字符",oncorrect:"毕业院校正确"}).inputValidator({min:4,max:20,onerror: "您还没有填写毕业院校!"});
+	$("#degree").formValidator({tipid:"degreeTip",onshow:"请选择你的学历",onfocus:"学历必须选择",oncorrect:"谢谢你的配合",defaultvalue:""}).inputValidator({min:1,onerror: "您还没有选择学历!"});
+	$("#nativeDate").focus(function(){WdatePicker({skin:'whyGreen',oncleared:function(){$(this).blur();},onpicked:function(){$(this).blur();}})}).formValidator({onshow:"请输入的出生日期",onfocus:"请输入的出生日期，不能全部是0哦",oncorrect:"你输入的日期合法"}).inputValidator({min:"1900-01-01",max:"2000-01-01",type:"date",onerror:"日期必须在\"1900-01-01\"和\"2000-01-01\"之间"});//.defaultPassed();
+	$("#height").formValidator({onshow:"请输入身高（100-210 CM之间）",onfocus:"只能输入100-210之间的数字哦",oncorrect:"输入正确"}).inputValidator({min:100,max:210,type:"value",onerrormin:"你输入的值必须大于等于100",onerror:"身高必须在100-210之间，请确认(输入正确后才能离开焦点)"}).defaultPassed();//;
+	$("#avoirdupois").formValidator({onshow:"请输入体重（30-200KG之间）",onfocus:"只能输入30-200之间的数字哦",oncorrect:"输入正确"}).inputValidator({min:30,max:200,type:"value",onerrormin:"你输入的值必须大于等于30",onerror:"身高必须在30-200之间，请确认(输入正确后才能离开焦点)"}).defaultPassed();//;
+	$("#specialty").formValidator({onshow:"请填写你的专业",onfocus:"专业长度要求2-25位字符",oncorrect:"专业填写正确"}).inputValidator({min:2,max:25,onerror: "您还没有填写专业!"});
+	$(":checkbox[name='language']").formValidator({tipid:"languageTip",onshow:"请选择你的语言（至少选一个）",onfocus:"你至少选择1个",oncorrect:"选择正确"}).inputValidator({min:1,onerror:"你选的个数不对"});
+	$(":radio[name='computer']").formValidator({tipid:"aiguoTip",onshow:"计算机熟练程序一定要选哦",onfocus:"请选择其中一个",oncorrect:"已经选择",defaultvalue:["4"]}).inputValidator({min:1,max:1,onerror:"必须选择一个！"});
+	$("#mobile").formValidator({onshow:"请输入你的手机号码",onfocus:"手机号码必须输入，必须输入正确",oncorrect:"谢谢你的合作",onempty:"手机号码不能为空？"}).inputValidator({min:11,max:11,onerror:"手机号码必须是11位的,请确认"}).regexValidator({regexp:"mobile",datatype:"enum",onerror:"你输入的手机号码格式不正确"});;
+	$("#tel").formValidator({empty:true,onshow:"请输入你的联系电话，可以为空哦",onfocus:"格式例如：0769-22382180",oncorrect:"联系电话输入成功",onempty:"你真的不想留联系电话了吗？"}).regexValidator({regexp:"^[[0-9]{3}-|\[0-9]{4}-]?([0-9]{8}|[0-9]{7})?$",onerror:"你输入的联系电话格式不正确"}).defaultPassed();
+	$("#email").formValidator({onshow:"请输入邮箱",onfocus:"邮箱6-100个字符,输入正确了才能离开焦点",oncorrect:"恭喜你,你输入的E-Mail地址正确"}).inputValidator({min:6,max:100,onerror:"你输入的邮箱长度非法,请确认"}).regexValidator({regexp:"^([\\w-.]+)@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.)|(([\\w-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(]?)$",onerror:"你输入的邮箱格式不正确"});
+	$("#accessionDate").focus(function(){WdatePicker({skin:'whyGreen',oncleared:function(){$(this).blur();},onpicked:function(){$(this).blur();}})}).formValidator({onshow:"请输入的最快就职日期",onfocus:"请输入的最快就职日期，不能全部是0哦",oncorrect:"你输入的日期合法"}).inputValidator({min:"2010-05-01",max:"2020-05-01",type:"date",onerror:"日期必须在\"2010-05-01\"和\"2020-05-01\"之间"});//.defaultPassed();
+	$("#treatment").formValidator({onshow:"请输入要求待遇",onfocus:"只能输入100-21000之间的数字哦",oncorrect:"输入正确"}).inputValidator({min:100,max:21000,type:"value",onerrormin:"你输入的值必须大于等于100",onerror:"身高必须在100-21000之间，请确认(输入正确后才能离开焦点)"}).defaultPassed();//;
+	$("#address").formValidator({onshow:"请填写联系地址",onfocus:"联系地址长度要求6-50位字符",oncorrect:"联系地址输入正确"}).inputValidator({min:6,max:50,onerror: "您还没有填写联系地址!"});
+	$("#detail").formValidator({onshow:"请填写简历",onfocus:"简历长度要求25-5000位字符",oncorrect:"简历输入正确"}).inputValidator({min:25,max:5000,onerror: "您还没有填写简历!"});
+	$("#Vcode").formValidator({tipid:"VcodeTip",onshow:"请输入验证码",onfocus:"验证码是四位数字",oncorrect:"输入了四位数字",defaultvalue:""}).regexValidator({regexp:"^\\d{4}$",onerror:"验证码不正确"});
+	
+});
+</script>
+
+<script type="text/javascript" src="../js/dropmenu/jquery.dropSlideMenu.js" tppabs="http://www.dg-pf.com/js/dropmenu/jquery.dropSlideMenu.js"></script>
+<script type="text/javascript" src="../js/dropmenu/jquery.event.hover.js" tppabs="http://www.dg-pf.com/js/dropmenu/jquery.event.hover.js"></script>
+<script language="javascript"> 
+$(document).ready(function() {
+$("#navigation").dropSlideMenu({
+indicators: true,
+clickstream: true,
+openEasing: "easeOutQuad",
+closeEasing: "easeInQuad",
+duration: 600,
+delay: 800,
+hideSelects: true
+});
+});
+</script>
+</head>
+<body>
+<div id="main">
+    <script language="javascript" type="text/javascript" src="../js/ie.js" tppabs="http://www.dg-pf.com/js/ie.js"></script>
+  <div id="top">
+    <div class="logo">
+      <div class="left"></div>
+	  <div class="tel">
+      <div class="topmenu"><a href="javascript:void(0)" onClick="window.external.AddFavorite('http://www.sunhb.com/','东莞市品凯电子器材有限公司')">加入收藏</a> - <a href="javascript:void(0)" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.sunhb.com/');">设为首页</a> - <a href="contact.asp.htm" tppabs="http://www.dg-pf.com/gb/contact.asp">联系方式</a></div>
+   <!--   <div class="toptel">服务热线：<strong><font color="#ff0000">0769-85554116</font></strong></div>-->
+    </div>
+    </div>
+  </div>
+        <div id="nav1">
+          <div id="nav">
+            <div id="MODBLK_169" class="mod_block mb_kOzgrVaw_block">
+              <div class="nav_l"></div>
+              <ul id="nav_Z8kBZk" class="navigation">
+        <li> <a href="../default.asp.htm" tppabs="http://www.dg-pf.com/default.asp"> 首页</a> </li>
+		<li class="bg"><img src="../images/mi_03.jpg" tppabs="http://www.dg-pf.com/images/mi_03.jpg" /></li>
+        <li><span><a href="company.asp.htm" tppabs="http://www.dg-pf.com/gb/company.asp">
+    关于我们</a>
+</span>
+		</li>
+		<li class="bg"><img src="../images/mi_03.jpg" tppabs="http://www.dg-pf.com/images/mi_03.jpg" /></li>
+<li>        <span><a href="products.asp-Categoryid=22&rel=1.htm" tppabs="http://www.dg-pf.com/gb/products.asp?Categoryid=22&rel=1">
+    产品展示</a>
+    <ul>
+<li><a href="products.asp-Categoryid=22&rel=1.htm" tppabs="http://www.dg-pf.com/gb/products.asp?Categoryid=22&rel=1">挂具产品</a></li>
+<li><a href="products.asp-Categoryid=21&rel=2.htm" tppabs="http://www.dg-pf.com/gb/products.asp?Categoryid=21&rel=2">过滤产品</a></li>
+<li><a href="products.asp-Categoryid=20&rel=3.htm" tppabs="http://www.dg-pf.com/gb/products.asp?Categoryid=20&rel=3">钛制产品</a></li>
+<li><a href="products.asp-Categoryid=19&rel=4.htm" tppabs="http://www.dg-pf.com/gb/products.asp?Categoryid=19&rel=4">加热产品</a></li>
+<li><a href="products.asp-Categoryid=18&rel=5.htm" tppabs="http://www.dg-pf.com/gb/products.asp?Categoryid=18&rel=5">压铸机配件</a></li>
+<li><a href="products.asp-Categoryid=17&rel=6.htm" tppabs="http://www.dg-pf.com/gb/products.asp?Categoryid=17&rel=6">其它产品</a></li>
+
+        </ul></span>
+
+		
+		</li>
+<li class="bg"><img src="../images/mi_03.jpg" tppabs="http://www.dg-pf.com/images/mi_03.jpg" /></li>
+<li>        <span><a href="news.asp.htm" tppabs="http://www.dg-pf.com/gb/news.asp">
+    新闻资讯</a>
+    <ul>
+<li><a href="newsList.asp-Categoryid=3&rel=1.htm" tppabs="http://www.dg-pf.com/gb/newsList.asp?Categoryid=3&rel=1">公司新闻</a></li>
+<li><a href="newsList.asp-Categoryid=4&rel=2.htm" tppabs="http://www.dg-pf.com/gb/newsList.asp?Categoryid=4&rel=2">行业资讯</a></li>
+
+        </ul></span>
+
+		
+		</li>
+		<li class="bg"><img src="../images/mi_03.jpg" tppabs="http://www.dg-pf.com/images/mi_03.jpg" /></li>
+        <li><span><a href="case.asp.htm" tppabs="http://www.dg-pf.com/gb/case.asp">
+    技术支持</a>
+    <ul>
+<li><a href="Case.asp-Categoryid=23&rel=1.htm" tppabs="http://www.dg-pf.com/gb/Case.asp?Categoryid=23&rel=1">技术支持一</a></li>
+<li><a href="Case.asp-Categoryid=24&rel=2.htm" tppabs="http://www.dg-pf.com/gb/Case.asp?Categoryid=24&rel=2">技术支持二</a></li>
+
+        </ul></span>
+
+		
+		</li>
+		<li class="bg"><img src="../images/mi_03.jpg" tppabs="http://www.dg-pf.com/images/mi_03.jpg" /></li>
+        <li><span><a href="job.asp.htm" tppabs="http://www.dg-pf.com/gb/job.asp">
+    诚聘英才</a>
+    <ul>
+<li><a href="news.asp.htm" tppabs="http://www.dg-pf.com/gb/news.asp">招聘信息</a></li>
+<li><a href="PostResume.asp.htm" tppabs="http://www.dg-pf.com/gb/PostResume.asp">毛遂自荐</a></li>
+        </ul></span>
+
+		
+		</li>
+		<li class="bg"><img src="../images/mi_03.jpg" tppabs="http://www.dg-pf.com/images/mi_03.jpg" /></li>
+        <li><span><a href="GuestBook.asp.htm" tppabs="http://www.dg-pf.com/gb/GuestBook.asp">
+    客户留言</a>
+   </span>
+		</li>
+		<li class="bg"><img src="../images/mi_03.jpg" tppabs="http://www.dg-pf.com/images/mi_03.jpg" /></li>
+        <li><span><a href="contact.asp.htm" tppabs="http://www.dg-pf.com/gb/contact.asp">
+    联系我们</a>
+ </span>
+		</li>
+              </ul>
+              <div class="nav_r"></div>
+              <script type="text/javascript"> 
+//$(".navigation li:first").css("background-image","none");
+var topMenuNum = 0;
+$("#nav_Z8kBZk li span").hover(
+	function(){
+		topMenuNum++;
+		$(this).attr("id","kindMenuHover"+topMenuNum);
+		$("#kindMenuHover" + topMenuNum + " > ul").show();
+		$(this).parent().addClass("hover");
+	},
+	function(){
+		$("#"+$(this).attr("id")+" > ul").hide();
+		$(this).attr("id","");
+		$(this).parent().removeClass("hover");
+	}
+);
+</script>
+            </div>
+          </div>
+        </div>
+  <div class="bannertop"></div>
+  <div class="banner"><LINK href="../js/dangdang/dangdang.css" tppabs="http://www.dg-pf.com/js/dangdang/dangdang.css" rel="stylesheet" type="text/css" media="screen">
+<SCRIPT type="text/javascript" src="../js/dangdang/dangdang.js" tppabs="http://www.dg-pf.com/js/dangdang/dangdang.js"></SCRIPT>
+<div id="switch">
+<div id="switch_img">
+	<ul>
+    	<li><img src="../UpFile/images/banner/banner1.jpg" tppabs="http://www.dg-pf.com/UpFile/images/banner/banner1.jpg" /></li>
+    	<li><img src="../UpFile/images/banner/banner3.jpg" tppabs="http://www.dg-pf.com/UpFile/images/banner/banner3.jpg" /></li>
+    	<li><img src="../UpFile/images/banner/banner2.jpg" tppabs="http://www.dg-pf.com/UpFile/images/banner/banner2.jpg" /></li>
+    </ul>
+</div>
+<div id="switch_button">
+	<div class="l_button"></div>
+    <dl id="switchButton">
+    	<dd></dd>
+        <dt><a href="javascript:if(confirm('http://localhost/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://localhost/'" tppabs="http://localhost/">banner1</a></dt>
+    	<dd></dd>
+        <dt><a href="javascript:if(confirm('http://218.16.125.81:804/gb/Productdetail.asp?Productid=94  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://218.16.125.81:804/gb/Productdetail.asp?Productid=94'" tppabs="http://218.16.125.81:804/gb/Productdetail.asp?Productid=94">banner2</a></dt>
+    	<dd></dd>
+        <dt><a href="javascript:if(confirm('http://localhost/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://localhost/'" tppabs="http://localhost/">banner3</a></dt>
+    </dl>
+    <div class="r_button"></div>
+</div>
+<div id="swith_bg"></div>
+</div>
+</div>
+  <div class="bannerbg1"></div> 
+  <div class="amain">
+    <div class="left">
+	  <div class="leftcd">诚聘英才</div>
+	  <div class="leftbb"><div class='menu'><ul>
+ <li><a href="job.asp.htm" tppabs="http://www.dg-pf.com/gb/job.asp"><span>招聘信息</span></a></li>
+ <li><a href="PostResume.asp.htm" tppabs="http://www.dg-pf.com/gb/PostResume.asp"><span>毛遂自荐</span></a></li>
+
+</ul></div></div>
+	  <div class="leftcc"></div>
+	  <div class="leftdd">联系方式</div>
+	  <div class="leftee"><ul><li>暂无</li></ul></div>
+	  <div class="leftff"></div>
+	</div>
+	<div class="right">
+	  <div class="ly">
+	    <div class="rightaa">毛遂自荐</div>
+		<div class="rightbb">您当前位置： <a href="../index.htm" tppabs="http://www.dg-pf.com/">首页</a> &gt;毛遂自荐</div>
+		<div class="rightcc">
+    <form name="forma" method="post" action=""  id="forma">
+<br />
+      <table width="700" border="0" align="center" class="pro128">
+      	<tr bgcolor="#FFFFFF">
+          <td width="70" align="left" nowrap><strong>应聘职位&nbsp;</strong></td>
+          <td>
+            销售精英
+          <div id="JobIdTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td width="70" nowrap><strong>姓名</strong></td>
+          <td><input name="name" type="text" id="name" size="15">&nbsp;&nbsp;<div id="nameTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>性别</strong></td>
+          <td><input name="sex" type="radio" value="男" id="sex0" checked>
+            男
+              <input name="sex" type="radio" value="女" id="sex1">
+          女&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="sexTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>籍贯</strong></td>
+          <td><SELECT name="nativePlace" id="nativePlace"> <OPTION selected value="">-请选择-</OPTION> 
+              <OPTION value=1>安徽</OPTION> <OPTION value=2>北京</OPTION> <OPTION 
+              value=3>重庆</OPTION> <OPTION value=4>福建</OPTION> <OPTION 
+              value=5>甘肃</OPTION> <OPTION value=6>广东</OPTION> <OPTION 
+              value=7>广西</OPTION> <OPTION value=8>贵州</OPTION> <OPTION 
+              value=9>海南</OPTION> <OPTION value=10>河北</OPTION> <OPTION 
+              value=11>黑龙江</OPTION> <OPTION value=12>河南</OPTION> <OPTION 
+              value=13>湖北</OPTION> <OPTION value=14>湖南</OPTION> <OPTION 
+              value=15>内蒙古</OPTION> <OPTION value=16>江苏</OPTION> <OPTION 
+              value=17>江西</OPTION> <OPTION value=18>吉林</OPTION> <OPTION 
+              value=19>辽宁</OPTION> <OPTION value=20>宁夏</OPTION> <OPTION 
+              value=21>青海</OPTION> <OPTION value=22>山西</OPTION> <OPTION 
+              value=23>陕西</OPTION> <OPTION value=24>山东</OPTION> <OPTION 
+              value=25>上海</OPTION> <OPTION value=26>四川</OPTION> <OPTION 
+              value=27>天津</OPTION> <OPTION value=28>西藏</OPTION> <OPTION 
+              value=29>新疆</OPTION> <OPTION value=30>云南</OPTION> <OPTION 
+              value=31>浙江</OPTION> <OPTION value=32>其他</OPTION> <OPTION 
+              value=33>香港</OPTION> <OPTION value=34>澳门</OPTION> <OPTION 
+              value=35>台湾</OPTION></SELECT>&nbsp;&nbsp;<div id="nativePlaceTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>毕业院校</strong></td>
+          <td><input name="school" type="text" id="school" size="20">&nbsp;&nbsp;<div id="schoolTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>学历</strong></td>
+          <td><SELECT name="degree" id="degree"> <OPTION value="" selected="selected">请选择学历</OPTION><OPTION value=1>小学</OPTION> <OPTION 
+              value=2>初中</OPTION> <OPTION value=3>高中</OPTION> <OPTION 
+              value=4>中专</OPTION> <OPTION value=5>职高</OPTION> <OPTION 
+              value=6>职专</OPTION> <OPTION value=7>技校</OPTION> <OPTION 
+              value=8>大专</OPTION> <OPTION value=9>大本</OPTION> <OPTION 
+              value=10>双学位</OPTION> <OPTION value=11>硕士</OPTION> <OPTION 
+              value=12>博士</OPTION> <OPTION value=13>博士后</OPTION></SELECT>&nbsp;&nbsp;<div id="degreeTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>出生日期</strong></td>
+          <td><input name="nativeDate" type="text" id="nativeDate" size="15">&nbsp;&nbsp;<div id="nativeDateTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>身高</strong></td>
+          <td><input name="height" type="text" id="height" size="15" />
+          CM&nbsp;&nbsp;<div id="heightTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>体重</strong></td>
+          <td><input name="avoirdupois" type="text" id="avoirdupois" size="15" />
+          KG&nbsp;&nbsp;<div id="avoirdupoisTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>专业</strong></td>
+          <td><input name="specialty" type="text" id="specialty" size="15">&nbsp;&nbsp;<div id="specialtyTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>语言</strong></td>
+          <td><input name="language" type="checkbox" id="language1" value="国语">
+          国语
+            <input name="language" type="checkbox" id="language2" value="粤语">
+          粤语
+          <input name="language" type="checkbox" id="language3" value="英语">
+          英语&nbsp;<input name="language" type="checkbox" id="language4" value="其它">其它
+          &nbsp;&nbsp;<div id="languageTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>计算机</strong></td>
+          <td><input name="computer" type="radio" id="computer1" value="精通">
+    精通
+      <input name="computer" type="radio" id="computer2" value="熟练">
+    熟练
+    <input name="computer" type="radio" id="computer3" value="一般">
+    一般
+    <input name="computer" type="radio" id="computer4" value="未接触">
+    未接触 &nbsp;&nbsp;<div id="atbxEmailTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>手机</strong></td>
+          <td><input name="mobile" type="text" id="mobile" size="20" />&nbsp;&nbsp;<div id="mobileTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>电话</strong></td>
+          <td><input name="tel" type="text" id="tel" size="20">&nbsp;&nbsp;<div id="telTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF" style="display:none;">
+          <td nowrap><strong>邮政编码</strong></td>
+          <td><input name="postcode" type="text" id="postcode" size="20" />&nbsp;&nbsp;<div id="postcodeTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>电子邮箱</strong></td>
+          <td><input name="email" type="text" id="email" size="20">&nbsp;&nbsp;<div id="emailTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>最快就职日期</strong></td>
+          <td><input name="accessionDate" type="text" id="accessionDate" size="20" />&nbsp;&nbsp;<div id="accessionDateTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>要求待遇</strong></td>
+          <td><input name="treatment" type="text" id="treatment" size="20">&nbsp;&nbsp;<div id="treatmentTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>联系地址</strong></td>
+          <td><input name="address" type="text" id="address" size="60">&nbsp;&nbsp;<div id="addressTip" style="width:250px; "></div></td>
+        </tr>
+     <tr bgcolor="#FFFFFF">
+          <td valign="top" nowrap><strong>简历&nbsp;</strong></td>
+          <td><textarea name="detail" cols="65" rows="10" id="detail"></textarea>&nbsp;&nbsp;<br />
+<div id="detailTip" style="width:250px; "></div></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td nowrap><strong>验证码</strong></td>
+          <td><input name="Vcode" type="text" id="Vcode" size="4">
+            <span style="color:#ff0000">*</span> <img height="18px" src="../include/CheckCode/showcode.asp.gif" tppabs="http://www.dg-pf.com/include/CheckCode/showcode.asp">&nbsp;&nbsp;<div id="VcodeTip" style="width:250px; "></div></td>
+        </tr>
+      </table>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td align="center"><input type="submit" value=" 发 送  ">
+          &nbsp;&nbsp;
+          <input type="reset" value=" 返 回 " onClick="javascript:history.back();"></td>
+        </tr>
+        
+      </table>
+    </form>
+</div>
+	  </div>
+	</div>
+  </div>
+  <div class="end"> <br />
+CopyRight &copy; 2012  All  Rights Reserved. 东莞市品凯电子器材有限公司 版权所有 <br />
+&nbsp;&nbsp;
+            地址：东莞市虎门镇北栅西坊工业区&nbsp;&nbsp;电话：0769-85554116 &nbsp;&nbsp;传真：0769-85118057
+
+           <br/>ICP备案：<a href="javascript:if(confirm('http://www.miibeian.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.miibeian.gov.cn/'" tppabs="http://www.miibeian.gov.cn/">粤ICP备06014567号</a>&nbsp;&nbsp;策划设计：<a href="javascript:if(confirm('http://dginfo.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://dginfo.com/'" tppabs="http://dginfo.com/" target="_blank">东商网</a></div>
+		
+</div>
+</BODY>
+</HTML>

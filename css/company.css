@@ -1,0 +1,22 @@
+.company_title{
+background-image:url("../images/company_03.jpg")/*tpa=http://www.dg-pf.com/images/company_03.jpg*/;
+width:774px;
+height:36px;}
+
+
+.company_title li{
+line-height:36px;
+text-align:right;
+font-size:12px;
+padding-right:50px;}
+
+.service_title{
+background-image:url("../images/service.jpg")/*tpa=http://www.dg-pf.com/images/service.jpg*/;
+width:774px;
+height:36px;}
+
+.service_title li{
+line-height:36px;
+text-align:right;
+font-size:12px;
+padding-right:50px;}
